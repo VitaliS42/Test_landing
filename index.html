@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gilroy.css">
+    <script src="https://kit.fontawesome.com/a975bb762f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- :: Mobile Menu -->
+    <input type="checkbox" id="menu-toggle"/>
+
+    <nav class="mobile-menu">
+        <ul class="mobile-menu__left-side">
+            <li><a href="#" class="mobile-menu__menu-link">Home</a></li>
+            <li><a href="#about me" class="mobile-menu__menu-link">About me</a></li>
+            <li><a href="#skills" class="mobile-menu__menu-link">Skills</a></li>
+            <li><a href="#portfolio" class="mobile-menu__menu-link">Portfolio</a></li>
+            <li><a href="#contacts" class="mobile-menu__menu-link">Contacts</a></li>
+        </ul>
+
+        <div class="mobile-menu__right-side">
+            <label for="menu-toggle">
+                <i class="mobile-menu__cross fa-solid fa-xmark fa-2xl"></i>
+            </label>
+
+            <div class="mobile-menu__lang">
+                <a href="#" class="mobile-menu__lang-link">RU</a>
+                <a href="#" class="mobile-menu__lang-link">ENG</a>
+            </div>
+        </div>
+    </nav>
+    <header class="navigation"> <!-- header с навигацией -->
+        <nav class="container">
+            <ul class="navigation__list">
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#">Home</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#about me">About me</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#skills">Skills</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#portfolio">Portfolio</a></li>
+                <li class="navigation__list-item"><a class="navigation__list-link" href="#contacts">Contacts</a></li>
+            </ul>
+            <hr>
+        </nav> 
+    </header>
+    <main> <!-- Main -->
+        <header class="person-card container"> <!-- Фото и имя -->
+            <div class="person-card__megaflex">
+                <div class="person-card__flex">
+                    <div class="person-card__item-name">Denis<br>Novik</div>
+                    <div class="person-card__item-profession">UX | UI designer<br>24 years old, Minsk</div>
+                    <div class="person-card__item-language">
+                        <a class="person-card__item-link1" href="#">RU</a> |
+                        <a class="person-card__item-link2" href="#">ENG</a>
+                    </div>
+                </div>
+                <div class="person-card__mobile-menu">
+                    <label for="menu-toggle">
+                        <i class="person-card__mobile-burger fa-solid fa-bars fa-2xl"></i>
+                    </label>            
+                </div>
+            </div>
+            <img class="person-card__img" src="img/foto.jpg" alt="foto">
+            <img class="person-card__img-mobile" src="img/foto-mobile.jpg" alt="foto">
+        </header>
+        <section class="about" id="about me"> <!-- Раздел about -->
+            <div class="about__container container">
+                <h2 class="about__header">About me</h2>
+                <p class="about__text">Hi, I'm Denis – UX/UI designer from <br class="br__mobile">Minsk. <br class="br__desktop"> I'm interested in design and <br class="br__mobile">everything connected with it.</p>
+                <p class="about__text">I'm studying at courses <br class="br__mobile"> "Web and mobile design<br class="br__desktop"> interfaces"<br class="br__mobile"> in IT-Academy.</p>
+                <p class="about__text">Ready to implement excellent<br class="br__mobile"> projects <br class="br__desktop">with wonderful people.</p>
+            </div>
+        </section>
+        <section class="skills container" id="skills"> <!-- раздел со скилами -->
+            <h2>Skills</h2>
+            <p class="skills__text">I work in such programs as</p>
+            <div class="skills__flex">
+                <div class="skills__item">
+                    <img class="skills__item-image" src="img/Adobe PS.svg" alt="Adobe PS">
+                    <p class="skills__item-text">Adobe<br>Photoshop</p>
+                    <img class="skills__item-stars" src="img/4-stars.svg" alt="4 stars">
+                </div>
+                <div class="skills__item">
+                    <img class="skills__item-image" src="img/Adobe I.svg" alt="Adobe I">
+                    <p class="skills__item-text">Adobe<br>Illustrator</p>
+                    <img class="skills__item-stars" src="img/3-stars.svg" alt="3 stars">
+                </div>
+                <div class="skills__item">
+                    <img class="skills__item-image" src="img/Adobe AE.svg" alt="Adobe AE">
+                    <p class="skills__item-text">Adobe<br>After Effects</p>
+                    <img class="skills__item-stars" src="img/4-stars.svg" alt="4 stars">
+                </div>
+                <div class="skills__item">
+                    <img class="skills__item-image" src="img/Figma.svg" alt="Figma">
+                    <p class="skills__item-text">Figma <br> &emsp; </p>
+                    <img class="skills__item-stars" src="img/4-stars.svg" alt="4 stars">
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio"> <!-- Портфолио -->
+            <div class="container">
+                <h2 class="portfolio__heading">Portfolio</h2>
+                <div class="portfolio__flex"> <!-- Магазин одежды -->
+                    <img class="portfolio__image" src="img/Shop.jpg" alt="Fashion store page">
+                    <a class="portfolio__link" href="#"><p>Online fashion store - Homepage</p></a>
+                </div>
+                <div class="portfolio__flex"> <!-- Магазин Reebok -->
+                    <img class="portfolio__image" src="img/Reebok.jpg" alt="Reebok page">
+                    <a class="portfolio__link" href="#"><p>Reebok Store - Concept</p></a>
+                </div>
+                <div class="portfolio__flex"> <!-- Braun -->
+                    <img class="portfolio__image" src="img/Braun.jpg" alt="Braun page">
+                    <a class="portfolio__link" href="#"><p>Braun Landing Page - Concept</p></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <h2 class="footer__header">Contacts</h2>
+        <p class="footer__text">Want to know more or just chat?<br>You are welcome!</p>
+        <button class="footer__button" name="send-message">Send message</button>
+        <div class="footer__flex">
+            <a class="footer__link fa-brands fa-linkedin" href="#"></a>
+            <a class="footer__link fa-brands fa-instagram" href="#"></a>
+            <a class="footer__link fa-brands fa-behance" href="#"></a>
+            <a class="footer__link fa-brands fa-dribbble" href="#"></a>
+        </div>
+        <p class="footer__text-small">Like me on<br>LinkedIn, Instagram, Behance, Dribble</p>
+    </footer>
+</body>
+</html>
